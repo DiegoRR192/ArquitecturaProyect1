@@ -1,0 +1,23 @@
+<h2>{{titulo}}</h2>
+<table class="table table-hover table-striper">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Identificación</th>
+            <th>Nombre</th>
+            <th>Dirección</th>
+            <th>Correo</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let cliente of lista">
+            <td>{{cliente.id}}</td>
+            <td>{{cliente.identificacion}}</td>
+            <td>{{cliente.nombre}}</td>
+            <td>{{cliente.direccion}}</td>
+            <td>{{cliente.correo}}</td>
+        </tr>
+    </tbody>
+</table>
+
+<p>clientes works!</p>
