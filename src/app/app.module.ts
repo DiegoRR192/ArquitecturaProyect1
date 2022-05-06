@@ -8,6 +8,8 @@ import { HomeComponent } from './components/home/home.component';
 import { ProductosComponent } from './components/productos/productos.component';
 import { LayoutModule } from './layout/layout.module';
 import { HttpClientModule } from '@angular/common/http';
+import { ClienteFormComponent } from './components/clientes/cliente-form.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,8 +17,10 @@ import { HttpClientModule } from '@angular/common/http';
     ClientesComponent,
     HomeComponent,
     ProductosComponent,
+    ClienteFormComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, LayoutModule, HttpClientModule],
+  //FormsModuls permite mapear los datos que tiene un objeto
+  imports: [BrowserModule, AppRoutingModule, LayoutModule, HttpClientModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
